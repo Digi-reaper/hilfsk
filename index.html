@@ -3,26 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css" charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/basic.css" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Oswald|Arima+Madurai|El+messiri' rel='stylesheet' type='text/css'>
     <title></title>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <ul class="nav nav-tabs">
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Products</a></li>
-      </ul>
+      <div class="col-md-6 col-xs-11">
+        <img src="assets/img/logo-icon.png" class="icon img-responsive col-xs-1">
+        <img src="assets/img/logo.png" class="logo img-responsive col-xs-10">
+      </div>
+      <div class="col-md-6 col-xs-1">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <ul class="nav nav-tabs navbar-collapse collapse" id="menu">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
     </div>
     <section class="head_intro">
       <div class="container test">
         <div class="row come-from-top trans-on-load">
-          <div class="heading"><span class="invisible">|</span><span class="element"></span><span class="invisible">|</span></div>
+          <div class="heading"><span class="invisible">|</span><span class="element"></span><span class="hidden">|</span></div>
         </div>
         <div class="row come-from-bottom trans-on-load">
           <p class="intro">
@@ -79,26 +93,30 @@
     </div>
     <div class="section-about-more">
       <div class="wedge-up"></div>
-      <div class="portfolio container">
-        <div class="card row">
-          <img src="assets/img/ach-mag.jpeg" class="img-responsive col-md-3 col-xs-2">
-          <div class="col-md-9 col-xs-10 quote">
-            <h1>The mantra of success is nothing</h1>
-            <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+      <div class="portfolio-cover">
+        <div class="portfolio container">
+          <div class="card row">
+            <img src="assets/img/ach-mag.jpeg" class="img-responsive col-md-3 col-xs-2">
+            <div class="col-md-8 col-xs-9 quote">
+              <h1>The mantra of success is nothing</h1>
+              <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+            </div>
           </div>
-        </div>
-        <div class="card row">
-          <div class="col-md-9 col-xs-10 quote" style="text-align:right">
-            <h1>The mantra of success is nothing</h1>
-            <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+          <div class="row horizontal-bar"></div>
+          <div class="card row">
+            <div class="col-md-9 col-xs-9 quote" style="text-align:right">
+              <h1>Follow your heat and be on top</h1>
+              <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+            </div>
+            <img src="assets/img/achievement-race.jpg" class="img-responsive col-md-3 col-xs-3">
           </div>
-          <img src="assets/img/achievement-race.jpg" class="img-responsive col-md-3 col-xs-2">
-        </div>
-        <div class="card row">
-          <img src="assets/img/celeb.png" class="img-responsive col-md-3 col-xs-2">
-          <div class="col-md-9 col-xs-10 quote">
-            <h1>Enjoy your success</h1>
-            <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+          <div class="row horizontal-bar"></div>
+          <div class="card row">
+            <img src="assets/img/celeb.png" class="img-responsive col-md-3 col-xs-2">
+            <div class="col-md-9 col-xs-10 quote">
+              <h1>Enjoy your success with your full heart</h1>
+              <span> if you want to have the good taste of success then just keep the cook book of success aside and start getting succes using your own experience</span>
+            </div>
           </div>
         </div>
       </div>
