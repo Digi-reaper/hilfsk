@@ -1,0 +1,159 @@
+
+body{
+	font-family: 'El Messiri', sans-serif;	
+	margin:0px;
+	.navbar-fixed-top{
+		height:50px;
+		background:rgba(255, 255, 255, 0.98);
+		.nav{
+			float: right;
+			margin:10px;
+			list-style-type : none;
+			border:none;
+			li{
+				margin : 0 10px;
+				a {
+					text-decoration : none;
+					color           : black;
+					padding         : 5px;
+					font-size       : 16px;
+					font-weight     : light;
+				}
+				a:hover {
+					color:black;
+					background:white;
+					border-radius:2px;
+
+				}
+			}
+		}
+	}
+	.trans-on-load{
+		position: relative;
+		transition: top 1s;
+	}
+	.come-from-top{
+		top: -500px;
+	}
+	.come-from-bottom {
+		top: 500px;
+		display: table;
+		margin: 0 auto;
+	}
+	.head_intro , .section-about-more {
+		background-image     : url("../assets/img/bg1.jpeg");
+		background-attachment: fixed;
+		background-size      : 100% 100%;
+		background-position  : center;
+		overflow             : hidden;
+		font-family          : 'Arima Madurai',cursive;
+		display              : table;
+		vertical-align       : middle;
+		width                : 100%;
+		height				 : -webkit-calc(100vh + 100px);
+		height				 : -moz-calc(100vh + 100px);
+		height				 : calc(100vh + 100px);
+		transition           : background-size 1s;
+		position             : relative;
+		.test {
+			width          :100%;
+			display        :table-cell;
+			vertical-align : middle;
+			margin         : 0 auto;
+			.heading {
+				margin      : 5% 0%;
+				text-align  : center;
+				color       : white;
+				font-size   : 75px;
+			}
+			.intro {
+				color         : white;
+				font-size     : 5vmin;
+				text-align    : center;
+				display       : table-cell;
+				vertical-align: middle;
+			}
+		}
+		.wedge-down , .wedge-up{
+			position:absolute;
+			width:100%;
+			left:0px;
+			right:0px;
+			height:0px;
+		}
+		.wedge-down{
+			bottom:0px;
+			border-bottom:100px solid white;
+			border-right:100vw solid transparent;
+		}
+		.wedge-up{
+			top:0px;
+			border-top:100px solid white;
+			border-left:100vw solid transparent;
+		}
+	}
+	.section-about{
+		font-family:'Arima Madurai','sans-sarif';
+		font-weight:100;
+		.summary{
+
+			padding: 50px 10px;
+			color:#999;
+			font-size:25px;
+			position:relative;
+			.vertical-rule{
+				width:1px;
+				border:0px;
+				background:#999;
+				height:90%;
+				position:absolute;
+				top:50px;
+				right:0px;
+			}
+		}
+		.section-form{
+			padding:50px 0px;
+		}
+	}
+	.section-about-more{
+		.portfolio{
+			width:100%;
+			padding:100px;
+			.card{
+				margin:10px;
+				height:200px;
+				img{
+					border-radius:50%;
+					width: 200px;
+					height:200px;
+				}
+				.quote{
+					padding:20px 10px;
+					color:white;
+					h1{
+						font-size:40px;
+					}
+					span{
+						font-size:20px;
+					}
+				}	
+			}
+		}
+	}
+	footer{
+		text-align: center;
+		padding: 10px 0px;
+		background-color: #24305e;
+		a{
+	  		text-decoration: none;
+	  		color: white;
+		}
+		p{
+	  		margin : 0px;
+	  		color: white;
+		}
+	}
+}
+.invisible{
+  visibility  : hidden;
+}
